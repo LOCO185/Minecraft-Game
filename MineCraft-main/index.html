@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>MineCraft</title>
+</head>
+<body>
+  <!-- landing page -->
+  <div class="landing">
+    <h2>MineCraft By Jawad</h2>
+    <div class="starter">
+      <button class="start">Start</button>
+      <br>
+      <button class="instructions">Instructions</button>
+      <br>
+      <div class="info">
+      <ul>
+        <li>a 2d look A like minecraft.</li>
+        <li>graphic designed 5 different resources:<br>Dirt, grass, wood, stone, and brick.</li>
+        <li>start crafting with the specific tool.</li>
+        <li>build your own world.</li>
+        <li>press start.</li>
+      </ul>
+      </div>
+    </div>
+  </div>
+<!--  -->
+<!-- main game -->
+  <div id="game">
+    <div id="world"></div>
+    <div id="sidebar">
+      <div id="tools"><span id="heady">Tools</span></div>
+      <div id="inventory"><span id="heady">inventory</span></div>
+      <div id="btns">
+        <button id="reset">Reset</button>
+        <button id="quit">Quit</button>
+      </div>
+    </div>
+  </div>
+  <!--  -->
+<!-- scripts -->
+  <script src="./createGame.js"></script>
+  <script src="./createSidebar.js"></script>
+  <script src="./createInventory.js"></script>
+  <script src="./createLanding.js"></script>
+  <script src="./logic.js"></script>
+</body>
+</html>
