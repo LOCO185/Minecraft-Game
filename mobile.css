@@ -1,0 +1,138 @@
+/* Responsive Media's  -!*/
+/* landscape */
+@media only screen and (max-width: 812px) {
+  /*###################### <For mobile phones:Tilt Screen> ###########################*/
+  body,
+  html {
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+  #game {
+    max-width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 10fr 100fr 30fr 10fr;
+  }
+  #heady {
+    display: none;
+  }
+  .landing {
+    height: 400px;
+    width: 900px;
+    max-width: 100vw;
+    overflow-y: hidden;
+    background-size: 100% 100%;
+  }
+  .starter {
+    transform: translateY(100px);
+  }
+  .start {
+    font-size: 20px;
+  }
+  .instructions {
+    font-size: 20px;
+  }
+  .info {
+    height: 210px;
+  }
+  .info ul {
+    line-height: 18px;
+    font-size: 14px;
+  }
+  #mat {
+    width: 100%;
+    height: 100%;
+  }
+}
+/*###################### </For mobile phones:Tilt Screen> ###########################*/
+
+/*######################## <Mobile Media Querries> ######################################*/
+@media only screen and (max-width: 500px) {
+  body,
+  html {
+    overflow-x: hidden;
+  }
+  .rotate {
+    visibility: visible;
+  }
+}
+.selected {
+  box-shadow: 5px 5px #888888;
+  border: 2px black solid;
+}
+/*######################## <tools> #################################################*/
+@media only screen and (max-width: 500px) {
+  .landing {
+    height: 100%;
+    width: 100%;
+    max-width: 100vw;
+    overflow-y: hidden;
+    background-size: 100% 100%;
+  }
+  #world {
+    width: 300px;
+  }
+  #sidebar {
+    transform: translateX(-70px);
+  }
+  div .tool {
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+  }
+  #tools {
+    margin-left: 70px;
+    width: 80px;
+  }
+  /*######################## </tools> #################################################*/
+  /*######################## <inventory> #################################################*/
+  #matiriales-container {
+    margin-left: 70px;
+    width: 80px;
+    background: #c6c6c6;
+    display: flex;
+    flex-direction: column;
+  }
+  #mat {
+    width: 60%;
+    height: 30%;
+  }
+  #heady {
+    display: none;
+  }
+  #mat.cl-0 {
+    transform: translateX(-5px);
+    background: url("./images/dirt_block.jpg");
+    background-size: 100% 100%;
+  }
+  #mat.cl-1 {
+    background: url("./images/wood_inv.jpg");
+    background-size: 100% 100%;
+  }
+  #mat.cl-2 {
+    background: url("./images/grass_inv.png");
+    background-size: 100% 100%;
+  }
+  #mat.cl-3 {
+    transform: translateX(4px);
+    background: url("./images/stone.jpg");
+    background-size: 100% 100%;
+  }
+  #btns {
+    background: #c6c6c6;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 54%;
+    margin-top: 2px;
+    height: 50px;
+    margin-left: 70px;
+  }
+  #btns button {
+    width: 100%;
+    height: 100%;
+    background: #c6c6c6;
+  }
+}
+/*######################## </inventory> #################################################*/
+/*######################## </Mobile Media Querries> ######################################*/

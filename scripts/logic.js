@@ -1,4 +1,4 @@
-// TODO : slected function to highlight selected tool , headline for tools and inventory
+// slected function to highlight selected tool , headline for tools and inventory
 
 // globals
 let chosenTool = 10;
@@ -87,13 +87,13 @@ function clear() {
 }
 function cursor() {
   if (chosenTool === 0) {
-    game.style.cursor = 'url(\'./img/shovel1.png\'),auto';
+    game.style.cursor = 'url(\'./images/shovel1.png\'),auto';
   }
   if (chosenTool === 1) {
-    game.style.cursor = 'url(\'./img/axe1.png\'),auto';
+    game.style.cursor = 'url(\'./images/axe1.png\'),auto';
   }
   if (chosenTool === 2) {
-    game.style.cursor = 'url(\'./img/pickaxe1.png\'),auto';
+    game.style.cursor = 'url(\'./images/pickaxe1.png\'),auto';
   }
 }
 
